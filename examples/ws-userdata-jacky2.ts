@@ -11,9 +11,10 @@ import { WebsocketClient } from '../src/websocket-client';
 // import { DefaultLogger, WebsocketClient } from 'binance';
 
 (async () => {
-  const key = process.env.APIKEY || 'aQ87QstE24MNXs7qmvojruLzZ0FAhRHO0FSIFN5cvaX86ZM7160hcOUFdJ9qRNU4';
-  const secret = process.env.APISECRET || 'c6V4Wd7FAeDVQcuEwdduJlIiiaH4CyjjUcgOMt2CIvuRCpYLsIAQJ8D9i9cEgASX';
+  const key = process.env.APIKEY || 'WK0AaBNAfdukp7RHhFH6M2qJkzH2hyulkypc22O5qY8rpPUEv5yQNeKeFGPgMFrM';
+  const secret = process.env.APISECRET || '3B19A0BOJUl2CER15gJsQrFCigomCGZdfHIvJbXKKwV7jFY8kdRCUiVe7pMrQDvY';
   const request = require('request');
+
   const logger = {
     ...DefaultLogger,
     silly: (...params) => console.log(params),
