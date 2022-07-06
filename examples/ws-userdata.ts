@@ -57,7 +57,7 @@ import { WebsocketClient } from '../src/websocket-client';
 
         request.post(
             {
-              url:'http://localhost/binanceTool/receiveTreadData.php?'+
+              url:'https://binance-tool-api.cryptoharvester.com.tw/receiveTreadData.php?'+
                   'API_KEY='+key+
                   '&symbol='+symbol+
                   '&orderId='+data['order']['orderId']+
