@@ -12,9 +12,9 @@ import { WebsocketClient } from '../src/websocket-client';
 
 var splitted = __filename.split(".");
 var splitted1 = splitted[0].split("/"); 
-var splitted2 = splitted1[6].split("-")
-var db_apikey =  splitted2[2]
-var db_apisecret =  splitted2[3]
+var splitted2 = splitted1[6].split("-");
+var db_apikey =  splitted2[2];
+var db_apisecret =  splitted2[3];
 
 (async () => {
   const key = db_apikey;
