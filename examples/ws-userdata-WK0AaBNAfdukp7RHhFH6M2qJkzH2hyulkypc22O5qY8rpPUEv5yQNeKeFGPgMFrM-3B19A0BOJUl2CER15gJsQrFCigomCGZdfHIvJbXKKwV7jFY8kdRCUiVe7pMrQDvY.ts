@@ -10,12 +10,17 @@ import { WebsocketClient } from '../src/websocket-client';
 // or
 // import { DefaultLogger, WebsocketClient } from 'binance';
 
-console.log('__filename='+__filename);
-console.log('__dirname='+ __dirname);
+var splitted = __filename.split(".");
+var splitted1 = splitted[0].split("/"); 
+var splitted2 = splitted1[6].split("-")
+var db_apikey =  splitted2[2]
+var db_apisecret =  splitted2[3]
+console.log(db_apikey)
+console.log(db_apisecret)
 
 (async () => {
-  const key = process.env.APIKEY || 'WK0AaBNAfdukp7RHhFH6M2qJkzH2hyulkypc22O5qY8rpPUEv5yQNeKeFGPgMFrM';
-  const secret = process.env.APISECRET || '3B19A0BOJUl2CER15gJsQrFCigomCGZdfHIvJbXKKwV7jFY8kdRCUiVe7pMrQDvY';
+  const key = db_apikey;
+  const secret = db_apisecret;
   const request = require('request');
 
   const logger = {
