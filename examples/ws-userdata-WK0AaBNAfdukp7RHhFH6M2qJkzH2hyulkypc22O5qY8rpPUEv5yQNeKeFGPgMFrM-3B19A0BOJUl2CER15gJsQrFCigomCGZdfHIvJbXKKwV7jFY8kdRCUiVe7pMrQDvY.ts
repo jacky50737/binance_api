@@ -10,8 +10,8 @@ import { WebsocketClient } from '../src/websocket-client';
 // or
 // import { DefaultLogger, WebsocketClient } from 'binance';
 
-var filename = (new Error).fileName
-console.log(filename);
+console.log('__filename='+__filename);
+console.log('__dirname='+ __dirname);
 
 (async () => {
   const key = process.env.APIKEY || 'WK0AaBNAfdukp7RHhFH6M2qJkzH2hyulkypc22O5qY8rpPUEv5yQNeKeFGPgMFrM';
