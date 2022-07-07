@@ -10,7 +10,7 @@ import { WebsocketClient } from '../src/websocket-client';
 // or
 // import { DefaultLogger, WebsocketClient } from 'binance';
 
-var filename = fullPath.replace(/^.*[\\\/]/, '')
+var filename = (new Error).fileName
 console.log(filename);
 
 (async () => {
