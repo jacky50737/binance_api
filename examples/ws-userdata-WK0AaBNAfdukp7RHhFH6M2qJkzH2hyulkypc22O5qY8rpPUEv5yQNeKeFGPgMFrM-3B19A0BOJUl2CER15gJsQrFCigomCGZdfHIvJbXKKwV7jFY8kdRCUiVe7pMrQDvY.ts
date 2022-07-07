@@ -15,8 +15,6 @@ var splitted1 = splitted[0].split("/");
 var splitted2 = splitted1[6].split("-")
 var db_apikey =  splitted2[2]
 var db_apisecret =  splitted2[3]
-console.log(db_apikey)
-console.log(db_apisecret)
 
 (async () => {
   const key = db_apikey;
