@@ -65,7 +65,9 @@ import { WebsocketClient } from '../src/websocket-client';
                   '&positionSide='+data['order']['positionSide']+
                   '&orderStatus='+data['order']['orderStatus']+
                   '&averagePrice='+data['order']['averagePrice']+
-                  '&originalQuantity='+data['order']['originalQuantity']
+                  '&originalQuantity='+data['order']['originalQuantity']+
+                  '&commissionAmount='+data['order']['commissionAmount']+
+                  '&realisedProfit='+data['order']['realisedProfit']
               ,
               encoding:'utf8'
             },
